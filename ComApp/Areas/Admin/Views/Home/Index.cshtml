@@ -21,7 +21,7 @@
                             <input type="hidden" name="id"  value="@entity.Id" />
                             <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">Удалить</a>
                         </form>
-                        <a asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
                             @($"{entity.Title}")
                         </a>
                     </div>
