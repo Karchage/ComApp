@@ -1,3 +1,10 @@
-﻿<div>
-    <h1>Home</h1>
+﻿@model ComApp.Domain.Entities.TextField
+@{ 
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keyword = Model.MetaKeywords;
+
+}
+<div>
+    @Html.Raw(Model.Text)
 </div>
