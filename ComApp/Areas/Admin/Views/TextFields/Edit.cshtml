@@ -33,6 +33,11 @@
                 <input asp-for="MetaDescription" />
                 <span asp-validation-for="MetaDescription"></span>
             </div>
+            <div class="div-box">
+                <label asp-for="MetaKeywords"></label>
+                <input asp-for="MetaKeywords" />
+                <span asp-validation-for="MetaKeywords"></span>
+            </div>
             <h3>Редактировать страницы сайта</h3>
             <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageIndex">Главная</a>
             <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageServices">Наши услуги</a>
