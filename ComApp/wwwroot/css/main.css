@@ -1196,3 +1196,6 @@ ul.link-list li {
   padding: 15px 0; }
   .div-box label {
     display: block; }
+
+a {
+  display: block; }
