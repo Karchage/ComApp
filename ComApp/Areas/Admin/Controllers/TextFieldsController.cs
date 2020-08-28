@@ -1,5 +1,6 @@
 ﻿using ComApp.Domain;
 using ComApp.Domain.Entities;
+using ComApp.Service;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
