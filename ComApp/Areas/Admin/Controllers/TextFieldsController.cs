@@ -21,6 +21,7 @@ namespace ComApp.Areas.Admin.Controllers
         public IActionResult Edit(string codeWord)
         {
             var entity = dataManager.TextFields.GetTextFieldByCodeWord(codeWord);
+            Console.WriteLine("ept");
             return View(entity);
         }
         [HttpPost]
