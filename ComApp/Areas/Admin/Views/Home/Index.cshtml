@@ -8,7 +8,7 @@
     <div>
         <h3>Услуги</h3>
         <div class="div-box">
-            <a asp-area="Admin" asp-controller="ServiceItem" asp-action="Edit" asp-route-id="">Добавить услугу</a>
+            <a asp-area="Admin" asp-controller="ServiceItems" asp-action="Edit" asp-route-id="">Добавить услугу</a>
         </div>    
         @if(Model.Any())
         {
@@ -16,8 +16,8 @@
                 @foreach(ServiceItem entity in Model)
                 {
                     <div>
-                        <a asp-area="Admin" asp-controller="ServiceItem" asp-action="Edit" asp-route-id="@entity.Id">Редактировать</a>
-                        <form style="display:inline-block" id="form-@entity.Id" asp-area="Admin" asp-controller="ServiceItem" asp-action="Delete" method="post">
+                        <a asp-area="Admin" asp-controller="ServiceItems" asp-action="Edit" asp-route-id="@entity.Id">Редактировать</a>
+                        <form style="display:inline-block" id="form-@entity.Id" asp-area="Admin" asp-controller="ServiceItems" asp-action="Delete" method="post">
                             <input type="hidden" name="id"  value="@entity.Id" />
                             <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">Удалить</a>
                         </form>
